@@ -1,2 +1,2 @@
-# 125 Days of SQL
+# 125 Queries of SQL
 Goal: 5 queries every day.
