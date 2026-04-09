@@ -3,22 +3,23 @@
    
 */
 
--- 1. Display all information from the salespeople table
+-- 1. display all columns from the salespeople table
 select * from salespeople;
 
--- 2. List all customers that have a rating of exactly 100
-select * from customers 
-where rating = 100;
 
--- 3. Identify records in the customer table where the city is not entered (NULL)
-select * from customers 
-where city is null;
+-- 2. list all customers with a rating of 100
+select * from customers where rating = 100;
 
--- 4. Find the maximum order amount for every salesperson on each specific date
+
+-- 3. find records in the customer table with null values in city
+select * from customers where city is null;
+
+
+-- 4. largest order taken by each salesperson on each date
 select snum, odate, max(amt) 
 from orders 
 group by snum, odate;
 
--- 5. Show the orders table sorted by customer number in descending order
-select * from orders 
-order by cnum desc;
+
+-- 5. arrange orders table by descending customer number
+select * from orders order by cnum desc;
