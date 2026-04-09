@@ -22,4 +22,4 @@ group by snum, odate;
 
 
 -- 5. arrange orders table by descending customer number
-select * from orders order by cnum desc;
+select * from orders order by cnum desc;   
